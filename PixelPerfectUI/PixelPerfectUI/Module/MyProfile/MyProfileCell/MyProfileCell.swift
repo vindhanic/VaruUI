@@ -19,4 +19,12 @@ class MyProfileCell: UITableViewCell {
         indicationLabel.font = UIFont.init(name: titleLabel.font.fontName, size: FontSize.FontSize17)
         // Initialization code
     }
+    
+    var objTitle:ModelMyProfileCell! {
+        didSet {
+            titleLabel.text = objTitle.title
+            indicationLabel.isHidden = objTitle.indicationStatus
+        }
+    }
+    
 }

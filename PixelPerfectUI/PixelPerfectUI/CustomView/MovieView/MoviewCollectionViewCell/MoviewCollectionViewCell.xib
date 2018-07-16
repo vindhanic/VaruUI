@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviewCollectionViewCell" id="gTV-IL-0wX" customClass="MoviewCollectionViewCell" customModule="PixelPerfectUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wOu-kb-CPn">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wOu-kb-CPn" secondAttribute="height" multiplier="1:1" id="Guv-Gh-23E"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The corporation: An Epic story of the cuban" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jhy-JP-HaX">
+                        <rect key="frame" x="0.0" y="155" width="150" height="28"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="DcN-Kp-f4Q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gregory Stickland" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfn-FO-w1i">
+                        <rect key="frame" x="0.0" y="188" width="150" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wOu-kb-CPn" secondAttribute="trailing" id="1BZ-Jp-t5Y"/>
+                <constraint firstItem="wOu-kb-CPn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7a8-Yc-3CZ"/>
+                <constraint firstItem="wOu-kb-CPn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CnL-Zd-dWo"/>
+                <constraint firstAttribute="bottom" secondItem="tfn-FO-w1i" secondAttribute="bottom" constant="5" id="MYy-L5-bx1"/>
+                <constraint firstAttribute="trailing" secondItem="tfn-FO-w1i" secondAttribute="trailing" id="Mr7-Xo-PDB"/>
+                <constraint firstItem="tfn-FO-w1i" firstAttribute="top" secondItem="Jhy-JP-HaX" secondAttribute="bottom" constant="5" id="OkT-nh-gMI"/>
+                <constraint firstItem="Jhy-JP-HaX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QVF-jo-iwr"/>
+                <constraint firstItem="Jhy-JP-HaX" firstAttribute="top" secondItem="wOu-kb-CPn" secondAttribute="bottom" constant="5" id="bws-O1-SOk"/>
+                <constraint firstItem="tfn-FO-w1i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dgY-MD-zVg"/>
+                <constraint firstAttribute="trailing" secondItem="Jhy-JP-HaX" secondAttribute="trailing" id="iZ2-dG-IoH"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="160" height="133"/>
+            <connections>
+                <outlet property="imgView" destination="wOu-kb-CPn" id="hoB-Cv-OAg"/>
+                <outlet property="lblDescription" destination="Jhy-JP-HaX" id="4CI-C0-OLi"/>
+                <outlet property="lblTitle" destination="tfn-FO-w1i" id="aNa-Dy-fLw"/>
+            </connections>
+            <point key="canvasLocation" x="-16.5" y="-2.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

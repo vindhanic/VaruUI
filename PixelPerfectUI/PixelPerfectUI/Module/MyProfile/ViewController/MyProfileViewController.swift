@@ -11,45 +11,33 @@ import UIKit
 class MyProfileViewController: UIViewController {
 
     @IBOutlet weak var myProfileTableView: UITableView!
+    var objViewModel = MyProfileViewModel()
+    var titleList:[ModelMyProfileCell]!    
     
+    //MARK:- ViewController delegate methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleList = objViewModel.getMyProfileTitleList()
         
-        // Do any additional setup after loading the view.
     }
 }
+
+
 //MARK:- My Profile UITableView Delegate and Datasource
 extension MyProfileViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
+  
+    //MARK:- Tableview datasource methods 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return titleList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifiers.kMyProfileCellID) as! MyProfileCell
-        
-        switch indexPath.row {
-        case 0:
-            cell.indicationLabel.isHidden = true
-            cell.titleLabel.text = "Edit Your Profile"
-        case 1:
-            cell.indicationLabel.isHidden = false
-            cell.titleLabel.text = "Menbership Status"
-        case 2:
-            cell.indicationLabel.isHidden = true
-            cell.titleLabel.text = "Billing History"
-        default:
-            cell.indicationLabel.isHidden = true
-            cell.titleLabel.text = "Listening Time"
-        }
-        
+        cell.objTitle = titleList[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44.0
+        return objViewModel.getCellHeight()
     }
 }
