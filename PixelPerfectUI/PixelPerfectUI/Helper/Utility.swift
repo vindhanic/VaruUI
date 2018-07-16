@@ -9,6 +9,7 @@
 import UIKit
 
 func setNavigationTitleColor() {
+    UINavigationBar.appearance().tintColor = .white
     UINavigationBar.appearance().titleTextAttributes =  [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Light", size: FontSize.FontSize18)!,NSAttributedStringKey.foregroundColor : UIColor.white]
 
 }

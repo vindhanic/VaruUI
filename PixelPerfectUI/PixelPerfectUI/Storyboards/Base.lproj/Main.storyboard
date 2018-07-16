@@ -117,20 +117,70 @@
                                     <constraint firstAttribute="height" constant="35" id="EfG-eF-1Eo"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TpV-st-W4M">
+                                <rect key="frame" x="138" y="286" width="98" height="30"/>
+                                <state key="normal" title="MoveToAuthor"/>
+                                <connections>
+                                    <segue destination="rtH-9f-kGO" kind="show" id="LQz-Dt-DQi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="TpV-st-W4M" firstAttribute="centerY" secondItem="QNh-ax-3ID" secondAttribute="centerY" id="02v-iT-00c"/>
                             <constraint firstItem="uHn-a3-pS1" firstAttribute="leading" secondItem="ggs-ls-Jll" secondAttribute="leading" id="8Ux-MO-sQJ"/>
                             <constraint firstItem="uHn-a3-pS1" firstAttribute="trailing" secondItem="ggs-ls-Jll" secondAttribute="trailing" id="SJ3-jX-H9w"/>
                             <constraint firstItem="uHn-a3-pS1" firstAttribute="top" secondItem="ggs-ls-Jll" secondAttribute="top" id="tNC-yJ-UqT"/>
+                            <constraint firstItem="TpV-st-W4M" firstAttribute="centerX" secondItem="QNh-ax-3ID" secondAttribute="centerX" id="v0N-5j-wCp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ggs-ls-Jll"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Discover" id="c1z-m3-4g0"/>
+                    <navigationItem key="navigationItem" title="Discover" id="c1z-m3-4g0">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="78R-S1-qIS"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9lH-7F-PMJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1749.5999999999999" y="-1101.4992503748126"/>
+        </scene>
+        <!--Author-->
+        <scene sceneID="ewZ-Li-wiS">
+            <objects>
+                <viewController id="rtH-9f-kGO" customClass="AuthorViewController" customModule="PixelPerfectUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GXa-i2-Wdo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="arH-YQ-tth">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="rtH-9f-kGO" id="qvG-4E-nYf"/>
+                                    <outlet property="delegate" destination="rtH-9f-kGO" id="vhf-Y0-FP0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="arH-YQ-tth" firstAttribute="trailing" secondItem="VRd-Xl-B7A" secondAttribute="trailing" id="2RX-zW-oRU"/>
+                            <constraint firstItem="arH-YQ-tth" firstAttribute="bottom" secondItem="VRd-Xl-B7A" secondAttribute="bottom" id="7n8-Uf-DRs"/>
+                            <constraint firstItem="arH-YQ-tth" firstAttribute="leading" secondItem="VRd-Xl-B7A" secondAttribute="leading" id="MY5-3E-1F5"/>
+                            <constraint firstItem="arH-YQ-tth" firstAttribute="top" secondItem="VRd-Xl-B7A" secondAttribute="top" id="Qno-kQ-PA6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VRd-Xl-B7A"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Author" id="Gzi-7h-I0r">
+                        <barButtonItem key="rightBarButtonItem" image="search" style="plain" id="FkF-uX-lGH">
+                            <inset key="largeContentSizeImageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="8"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="authorTableView" destination="arH-YQ-tth" id="DF2-oW-JLZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PnX-nO-D7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2456.8000000000002" y="-1101.4992503748126"/>
         </scene>
         <!--My Library-->
         <scene sceneID="2u9-DK-ZTX">
@@ -322,6 +372,7 @@
         <image name="mylibrary_selected" width="28" height="21"/>
         <image name="myprofile" width="19" height="21"/>
         <image name="myprofile_selected" width="19" height="21"/>
+        <image name="search" width="36" height="36"/>
         <image name="settings" width="21" height="22"/>
         <image name="settings_selected" width="21" height="22"/>
     </resources>
