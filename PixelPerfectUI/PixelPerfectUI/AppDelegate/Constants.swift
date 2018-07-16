@@ -22,5 +22,12 @@ struct FontSize {
 //MARK:- CellIdentifiers
 struct CellIdentifiers {
     static let kMyProfileCellID = "myProfileCellID"
+    static let kAuthorOverviewCellID = "authorOverviewCellID"
+    static let kMoreByAuthorCellID = "moreByAuthorCellID"
+}
+
+struct XIBName {
+    static let kAuthorOverviewXIB = "AuthorOverviewCell"
+    static let kMoreByAuthorXIB = "MoreByAuthorCell"
 }
 

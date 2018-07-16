@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="moreByAuthorCellID" id="KGk-i7-Jjw" customClass="MoreByAuthorCell" customModule="PixelPerfectUI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="havana" translatesAutoresizingMaskIntoConstraints="NO" id="uhd-ok-4q9">
+                        <rect key="frame" x="13" y="5" width="170" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="uhd-ok-4q9" secondAttribute="height" multiplier="1:1" id="4ew-mh-Dge"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="epic" translatesAutoresizingMaskIntoConstraints="NO" id="6Na-8I-Db7">
+                        <rect key="frame" x="193" y="5" width="170" height="170"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Havana Nocturne: How the Mob Owned Cuba..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vga-6n-Qi7">
+                        <rect key="frame" x="13" y="185" width="170" height="29"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.011764705882352941" green="0.12941176470588234" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSm-Tw-vBf">
+                        <rect key="frame" x="13" y="220" width="73" height="14.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Havana Nocturne: How the Mob Owned Cuba..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BE1-gc-B9d">
+                        <rect key="frame" x="193" y="185" width="170" height="29"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.01176470588" green="0.12941176469999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nl0-s3-tKf">
+                        <rect key="frame" x="193" y="220" width="73" height="14.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="nl0-s3-tKf" secondAttribute="bottom" constant="15" id="2K8-ii-Z6v"/>
+                    <constraint firstItem="6Na-8I-Db7" firstAttribute="width" secondItem="uhd-ok-4q9" secondAttribute="width" id="5d0-Fa-CYz"/>
+                    <constraint firstItem="BE1-gc-B9d" firstAttribute="top" secondItem="6Na-8I-Db7" secondAttribute="bottom" constant="10" id="B3C-kb-kkR"/>
+                    <constraint firstItem="vga-6n-Qi7" firstAttribute="leading" secondItem="uhd-ok-4q9" secondAttribute="leading" id="BdT-Ip-Fn9"/>
+                    <constraint firstItem="MSm-Tw-vBf" firstAttribute="leading" secondItem="vga-6n-Qi7" secondAttribute="leading" id="Ceu-Q4-9Rj"/>
+                    <constraint firstItem="6Na-8I-Db7" firstAttribute="height" secondItem="uhd-ok-4q9" secondAttribute="height" id="Jt9-mk-C5f"/>
+                    <constraint firstItem="uhd-ok-4q9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="Kuj-Z6-bVZ"/>
+                    <constraint firstAttribute="bottom" secondItem="MSm-Tw-vBf" secondAttribute="bottom" constant="15" id="Tnr-3q-xzd"/>
+                    <constraint firstItem="MSm-Tw-vBf" firstAttribute="top" secondItem="vga-6n-Qi7" secondAttribute="bottom" constant="6" id="Ytp-5e-2WJ"/>
+                    <constraint firstItem="uhd-ok-4q9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Zly-vm-xp9"/>
+                    <constraint firstItem="vga-6n-Qi7" firstAttribute="top" secondItem="uhd-ok-4q9" secondAttribute="bottom" constant="10" id="asO-2G-UTZ"/>
+                    <constraint firstItem="BE1-gc-B9d" firstAttribute="leading" secondItem="6Na-8I-Db7" secondAttribute="leading" id="bOm-NH-Pxw"/>
+                    <constraint firstItem="6Na-8I-Db7" firstAttribute="leading" secondItem="uhd-ok-4q9" secondAttribute="trailing" constant="10" id="doi-jO-kzp"/>
+                    <constraint firstItem="nl0-s3-tKf" firstAttribute="top" secondItem="BE1-gc-B9d" secondAttribute="bottom" constant="6" id="fJI-DX-4Fp"/>
+                    <constraint firstItem="nl0-s3-tKf" firstAttribute="leading" secondItem="BE1-gc-B9d" secondAttribute="leading" id="fdb-qb-TTw"/>
+                    <constraint firstAttribute="trailing" secondItem="6Na-8I-Db7" secondAttribute="trailing" constant="12" id="hR2-w9-PAG"/>
+                    <constraint firstItem="vga-6n-Qi7" firstAttribute="trailing" secondItem="uhd-ok-4q9" secondAttribute="trailing" id="nHh-be-yHW"/>
+                    <constraint firstItem="6Na-8I-Db7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="r9B-KP-x5h"/>
+                    <constraint firstItem="BE1-gc-B9d" firstAttribute="trailing" secondItem="6Na-8I-Db7" secondAttribute="trailing" id="umD-mM-TXY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="epic" width="177" height="176"/>
+        <image name="havana" width="176" height="177"/>
+    </resources>
+</document>

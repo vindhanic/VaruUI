@@ -11,6 +11,11 @@
 		463958DA20FB7EC600F0771C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463958D920FB7EC600F0771C /* Constants.swift */; };
 		463958DD20FB81DC00F0771C /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463958DC20FB81DC00F0771C /* MyProfileViewController.swift */; };
 		463958E020FB84AA00F0771C /* MyProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463958DF20FB84AA00F0771C /* MyProfileCell.swift */; };
+		463958E420FBA77A00F0771C /* AuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463958E320FBA77A00F0771C /* AuthorViewController.swift */; };
+		463958E920FBB0E500F0771C /* AuthorOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463958E720FBB0E500F0771C /* AuthorOverviewCell.swift */; };
+		463958EA20FBB0E500F0771C /* AuthorOverviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463958E820FBB0E500F0771C /* AuthorOverviewCell.xib */; };
+		463958EE20FBBA1C00F0771C /* MoreByAuthorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463958EC20FBBA1C00F0771C /* MoreByAuthorCell.swift */; };
+		463958EF20FBBA1C00F0771C /* MoreByAuthorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 463958ED20FBBA1C00F0771C /* MoreByAuthorCell.xib */; };
 		46A6B2EC20FA5CED00329DAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A6B2EB20FA5CED00329DAB /* AppDelegate.swift */; };
 		46A6B2F120FA5CED00329DAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A6B2EF20FA5CED00329DAB /* Main.storyboard */; };
 		46A6B2F320FA5CED00329DAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A6B2F220FA5CED00329DAB /* Assets.xcassets */; };
@@ -41,6 +46,11 @@
 		463958D920FB7EC600F0771C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		463958DC20FB81DC00F0771C /* MyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		463958DF20FB84AA00F0771C /* MyProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileCell.swift; sourceTree = "<group>"; };
+		463958E320FBA77A00F0771C /* AuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorViewController.swift; sourceTree = "<group>"; };
+		463958E720FBB0E500F0771C /* AuthorOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorOverviewCell.swift; sourceTree = "<group>"; };
+		463958E820FBB0E500F0771C /* AuthorOverviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthorOverviewCell.xib; sourceTree = "<group>"; };
+		463958EC20FBBA1C00F0771C /* MoreByAuthorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreByAuthorCell.swift; sourceTree = "<group>"; };
+		463958ED20FBBA1C00F0771C /* MoreByAuthorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreByAuthorCell.xib; sourceTree = "<group>"; };
 		46A6B2E820FA5CED00329DAB /* PixelPerfectUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelPerfectUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A6B2EB20FA5CED00329DAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46A6B2F020FA5CED00329DAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 		463958D520FA6C6F00F0771C /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				463958E120FBA72200F0771C /* AuthorViewController */,
 				463958DB20FB81C100F0771C /* MyProfile */,
 			);
 			path = Module;
@@ -111,6 +122,42 @@
 				463958DF20FB84AA00F0771C /* MyProfileCell.swift */,
 			);
 			path = MyProfileCell;
+			sourceTree = "<group>";
+		};
+		463958E120FBA72200F0771C /* AuthorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				463958E520FBB0A500F0771C /* AuthorCell */,
+				463958E320FBA77A00F0771C /* AuthorViewController.swift */,
+			);
+			path = AuthorViewController;
+			sourceTree = "<group>";
+		};
+		463958E520FBB0A500F0771C /* AuthorCell */ = {
+			isa = PBXGroup;
+			children = (
+				463958EB20FBBA0700F0771C /* MoreByAuthorCell */,
+				463958E620FBB0AE00F0771C /* AuthorOverviewCell */,
+			);
+			path = AuthorCell;
+			sourceTree = "<group>";
+		};
+		463958E620FBB0AE00F0771C /* AuthorOverviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				463958E720FBB0E500F0771C /* AuthorOverviewCell.swift */,
+				463958E820FBB0E500F0771C /* AuthorOverviewCell.xib */,
+			);
+			path = AuthorOverviewCell;
+			sourceTree = "<group>";
+		};
+		463958EB20FBBA0700F0771C /* MoreByAuthorCell */ = {
+			isa = PBXGroup;
+			children = (
+				463958EC20FBBA1C00F0771C /* MoreByAuthorCell.swift */,
+				463958ED20FBBA1C00F0771C /* MoreByAuthorCell.xib */,
+			);
+			path = MoreByAuthorCell;
 			sourceTree = "<group>";
 		};
 		46A6B2DF20FA5CED00329DAB = {
@@ -298,8 +345,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A6B2F620FA5CED00329DAB /* LaunchScreen.storyboard in Resources */,
+				463958EA20FBB0E500F0771C /* AuthorOverviewCell.xib in Resources */,
 				46A6B2F320FA5CED00329DAB /* Assets.xcassets in Resources */,
 				46A6B2F120FA5CED00329DAB /* Main.storyboard in Resources */,
+				463958EF20FBBA1C00F0771C /* MoreByAuthorCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,9 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				463958E920FBB0E500F0771C /* AuthorOverviewCell.swift in Sources */,
 				463958D820FB7B6000F0771C /* Utility.swift in Sources */,
+				463958EE20FBBA1C00F0771C /* MoreByAuthorCell.swift in Sources */,
 				46A6B2EC20FA5CED00329DAB /* AppDelegate.swift in Sources */,
 				463958E020FB84AA00F0771C /* MyProfileCell.swift in Sources */,
+				463958E420FBA77A00F0771C /* AuthorViewController.swift in Sources */,
 				463958DD20FB81DC00F0771C /* MyProfileViewController.swift in Sources */,
 				463958DA20FB7EC600F0771C /* Constants.swift in Sources */,
 			);
